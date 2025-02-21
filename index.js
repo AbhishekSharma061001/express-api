@@ -5,7 +5,6 @@ const app = express();
 const cors = require('cors');
 app.use(cors());
 
-const ip = '0.0.0.0';  
 const port = process.env.PORT || 3000;
 
 app.use(bodyParser.json());
@@ -43,6 +42,6 @@ app.get('/bfhl', (req, res) => {
 });
 
 // Bind the server to the desired IP address and port
-app.listen(port, ip, () => {
-    console.log(`Server is running on http://${ip}:${port}`);
+app.listen(port, () => {
+    console.log(`Server is running on PORT : ${port}`);
 });
