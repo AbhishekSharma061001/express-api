@@ -5,7 +5,7 @@ const app = express();
 const cors = require('cors');
 app.use(cors());
 
-const ip = '192.168.59.19';  
+const ip = '0.0.0.0';  
 const port = process.env.PORT || 3000;
 
 app.use(bodyParser.json());
